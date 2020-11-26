@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BMI Calulator : เว็บวัด BMI</title>
+    <link rel="stylesheet" type="text/css" href="main_css.css">
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+
+            <h2 class="headd">BMI Calulator</h2>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Main Page</a></li>
+                    <li><a href="http://www.khonkaenram.com/th/services/health-information/health-articles/program-bmi">What's BMI</a></li>
+                    <li><a href="./BMI_cal.html">BMI Calulator</a></li>
+                    <li><a href="https://www.facebook.com/minrer/">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="skip_bar"></div>
+    <div class="container">
+        <h1><b>BMI CALULATOR</b></h1>
+        <p>กรุณากรอกน้ำหนักของคุณ (kg)</p><input id="user_input_W" type="text"><br>
+        <p>กรุณากรอกความสูงของคุณ (cm)</p><input id="user_input_H" type="text"><br><br>
+        <button onclick="display(document.getElementById('user_input_W').value,
+            document.getElementById('user_input_H').value)">Confirm</button>
+        <br>
+        <p style="font-size: 20px;" id="result_bmi"></p>
+        <p style="font-size: medium;" id="toShow"></p>
+
+        <script src="cal.js"></script>
+    </div>
+    <div class="skip_bar"></div>
+    <div class="container2">
+        <h3><b>โดยสามารถแปลผลค่า BMI ได้ดังนี้</b></h3>
+        <p id="thin_fa">ค่า <b style="padding-right: 66px;">
+            BMI < 18.5</b> แสดงถึง <span style="padding-right: 10px;"> อยู่ในเกณฑ์น้ำหนักน้อยหรือผอม</span></p>
+
+        <p id="thin_fa">ค่า <b style="padding-right: 20px;">
+            BMI 18.5 – 22.90</b> แสดงถึง <span style="padding-right: 100px;">อยู่ในเกณฑ์ปกติ</span></p>
+
+        <p id="thin_fa">ค่า <b style="padding-right: 29px;">
+            BMI 23 – 24.90 </b> แสดงถึง <span style="padding-right: 10px;">น้ำหนักเกิน</span></p>
+
+        <p id="thin_fa">ค่า <b style="padding-right: 28px;">
+            BMI 25 – 29.90 </b> แสดงถึง <span style="padding-right: 10px;">โรคอ้วนระดับที่ 1</span></p>
+
+        <p id="thin_fa">ค่า <b style="padding-right: 44px;">
+            BMI 30 ขึ้นไป </b> แสดงถึง <span style="padding-right: 10px;">โรคอ้วนระดับที่ 2</span></p>
+    </div>
+
+</body>
+
+</html>
